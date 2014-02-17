@@ -9,7 +9,7 @@ public class AccountNumberProcessorTest {
     @Test
     public void givenASetOfValuesParseIntoAValidString() {
         List<Char> accountNumber = new ValidStringParser().parse(null);
-        new Accounts().validate(accountNumber);
+        new Account(accountNumber);
     }
     @Test(expected=IllegalArgumentException.class)
     public void givenAnInvalidSetOfValuesParseIntoAValidString() {
