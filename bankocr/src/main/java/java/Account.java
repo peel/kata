@@ -1,4 +1,4 @@
-package kata;
+package java;
 
 import com.google.common.base.Joiner;
 

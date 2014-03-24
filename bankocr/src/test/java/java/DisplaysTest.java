@@ -1,8 +1,8 @@
-package kata;
+package java;
 
 import org.junit.Test;
 
-import static junit.framework.Assert.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by m095445 on 2/17/14.
@@ -16,8 +16,6 @@ public class DisplaysTest {
     public void givenADisplayStringReturnsAvalidDisplay() {
         Display expected = new Display("    _  _     _  _  _  _  _ ", "  | _| _||_||_ |_   ||_||_|", "  ||_  _|  | _||_|  ||_| _|");
         Display actual = new Displays().getDisplay(PRINT);
-        System.out.println(actual.toString());
-        System.out.println(expected.toString());
         assertTrue(actual.equals(expected));
     }
 }

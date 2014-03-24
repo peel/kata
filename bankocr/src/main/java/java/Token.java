@@ -1,4 +1,4 @@
-package kata;
+package java;
 
 public class Token {
     private final String line0;

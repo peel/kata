@@ -1,4 +1,4 @@
-package kata;
+package java;
 
 public class Display {
     private final String line0;

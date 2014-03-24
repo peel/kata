@@ -1,4 +1,4 @@
-package kata;
+package java;
 
 import com.google.common.collect.Lists;
 import org.junit.Test;
@@ -13,6 +13,7 @@ public class ParserTest {
     public static final String PRINT = "    _  _     _  _  _  _  _ \n" +
             "  | _| _||_||_ |_   ||_||_|\n" +
             "  ||_  _|  | _||_|  ||_| _|\n";
+    public static final String INVALID_PRINT = "\n\n\n";
 
     @Test
     public void givenAValidAccountNumberStringParseIntoACharList() {
@@ -22,7 +23,7 @@ public class ParserTest {
     }
     @Test(expected = IllegalArgumentException.class)
     public void givenAnInvalidAccountStringParseIntoACharList() {
-        List<Char> chars = parser.parse(PRINT);
+        List<Char> chars = parser.parse(INVALID_PRINT);
         List<Char> expected=Lists.newArrayList(Char.THREE,Char.FOUR, Char.FIVE, Char.SIX, Char.SEVEN, Char.EIGHT, Char.NINE);
         assertTrue(elementsEqual(chars, expected));
     }

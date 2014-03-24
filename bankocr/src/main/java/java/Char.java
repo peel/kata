@@ -1,4 +1,4 @@
-package kata;
+package java;
 
 /**
 * Created by m095445 on 2/17/14.

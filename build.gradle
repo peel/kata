@@ -1,0 +1,22 @@
+apply plugin: 'java'
+
+allprojects {
+    ext.baseVersion = "0.1"
+    ext.snapshotVersion = true
+
+    group = "io.github.peel"
+    version = "$baseVersion" + (snapshotVersion ? "-SNAPSHOT" : "")
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    repositories{
+        mavenCentral()
+    }
+
+    dependencies{
+        testCompile 'junit:junit:13.11'
+    }
+}
+

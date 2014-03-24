@@ -1,4 +1,4 @@
-package kata;
+package java;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Test;
